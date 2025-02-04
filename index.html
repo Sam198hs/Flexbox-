@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felxbox Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+       
+       body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex:1;
+            padding:0 0 0 10px;
+            background-color:  #1F2937;
+            font-size: 20px;
+            color: #F9FAF8;
+        }
+
+        .header img{
+            height: 60px;
+            width: 120px;
+            border-radius: 5%;
+            object-fit: cover;
+        }
+
+        .header-link ul{
+            list-style: none;
+            display: flex;
+            font-size: 20px;
+        }
+
+        .header-link a{
+            padding: 10px;
+            text-decoration: none;
+            color: #E5E7EB;
+        }
+
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            width: 100%; 
+            height: auto;
+            background-color: #1F2937;
+            overflow: hidden;
+        }
+
+        .hero-text{
+            flex: 1;
+            
+        }
+
+        .hero-text h2{
+            font-size: 48px;
+            font-weight: 900;
+            color: #F9FAF8;
+            margin: 80px 80px 0px  80px;
+        }
+
+        .hero-text p{
+            font-size: 20px;
+            margin: 10px 80px 0px  80px;
+            color: #e5e7ebcd;
+        }
+
+        .hero .btn{
+            background-color: #3882F6;
+            margin: 20px 80px 0px  80px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            color: #F9FAF8;
+            font-weight: 600;
+        }
+
+        .hero-image{
+            flex: 1;
+            height: 50%;
+            margin: 80px 80px 80px  80px;
+            object-fit: contain;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .notes{
+            height: auto;
+            padding: 80px;
+        }
+
+        .notes-text{
+            text-align: center;
+            font-size: 30px;
+            color: #1F2937;
+        }
+
+        .notes-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;  
+        }
+
+        .notes-item{
+            flex-direction: column;
+            width: 22%;
+            overflow: hidden;
+            justify-content: center;
+            text-align: center;
+            
+            padding: 3px;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .notes-item img {
+            border: 1px solid #3882F6;
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 10px;        
+        }
+
+        .quote {
+            text-align: center;
+            padding: 80px;
+            background-color: #e5e7eb;
+            font-size: 30px;
+            font-style: light italic;
+            color:#1F2937 ;
+            
+         }
+
+        .quote p {
+            text-align: justify;
+            
+            
+        }
+
+        .quote .attribution { 
+            display: block;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .action{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 150px;
+            background-color: #3882F6;
+            border-radius: 5px;
+            color: #F9FAF8;            
+        }
+
+        .action div{
+            padding: 20px;
+        }
+
+        .action-btn{
+            
+            padding: 10px 20px;
+            border: 3px solid #F9FAF8;
+            color: #F9FAF8;
+            border-radius: 5px;
+            height: auto;
+            background-color: #3882F6;
+        }
+
+        footer{
+            text-align: center;
+            background-color:  #1F2937;
+        }
+
+        footer p{
+            color: #E5E7EB;
+        }
+
+        @media (min-width: 890px) and (max-width: 1200px) {
+            .hero h2{
+                font-size: 28px;
+                margin: 80px 20px 0px 80px;
+            }
+            .hero-text p{
+                font-size: 16px;
+                margin: 10px 20px 0px 80px;
+            }
+
+            .action-btn{
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 889px) {
+            .hero{
+                flex-direction: column-reverse;
+            }
+
+            .hero h2{
+                font-size: 32px;
+            }
+
+            .hero-text p{
+                font-size: 20px;
+            }
+
+            .hero-text{
+                margin-bottom: 40px;
+            }
+
+            .hero-image{
+                margin-bottom: 10px;
+            }
+
+            .notes-text h2{
+                font-size: 32px;
+            }
+
+            .notes-container{
+                flex-direction: column;
+            }
+
+            .notes-item{
+                width: 100%;
+            }
+
+            .quote {
+                font-size: 20px;
+            }
+
+            .action{
+                flex-direction: column;
+            }
+
+            .action-btn{
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            <h1>Mind Flow</h1>
+        </div>
+        <div class="header-link">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Unlock Your Potential with Our Innovative Solutions!</h2>
+            <p>We provide tools and resources to help you achieve your dreams faster. 
+                Whether you're looking to improve productivity, enhance creativity, or streamline your workflow, we've got you covered.</p>
+            <button class="btn">Get Started Today!</button>
+        </div>
+        <div class="hero-image">
+            <img src="./asserts/group-school-friends-outdoors-arms-around-one-another-togetherness-community-concept.jpg" alt="an image of happy users,">
+        </div>
+    </div>
+    <!-- Notes section -->
+    <div class="notes">
+        <div class="notes-text">
+            <h2>Essential Tools for Productivity & Wellness</h2>
+        </div>
+        <div class="notes-container">
+            <div class="notes-item">
+                <img src="./asserts/Note 1.jpg" alt=" An image of a task manager interface or a to-do list on a digital device">
+                <p>Stay organized with our task management tools, helping you prioritize and achieve your goals with ease.</p>
+            </div>
+            <div class="notes-item">
+                <img src="./asserts/Note 2.jpg" alt="A person meditating in a quiet, peaceful space, using the MindFlow app">
+                <p>Take a break with mindfulness exercises designed to refresh your mind and improve focus.</p>
+            </div>
+            <div class="notes-item">
+                <img src="./asserts/Note 3.jpg" alt="An image of a coffee cup and notebook on a desk, symbolizing a productive work environment.">
+                <p>Boost your productivity by establishing healthy routines, including mindful work breaks.</p>
+            </div>
+            <div class="notes-item">
+                <img src="./asserts/Note 4.jpg" alt="A graph or progress tracker showing productivity stats or wellness progress.">
+                <p>Track your progress over time with detailed analytics, keeping you on the path to success.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Quote Section  -->
+    <div class="quote">
+        <p><em>The ability to stay focused on what matters, while calmly letting go of distractions, is the hallmark of a successful and fulfilled life. 
+            Success is not just about working hard, but about working smart and being mindful of how we channel our energy.<br></em>
+            <span class="attribution">—Thor, God of Thunder</span>
+        </p>
+    </div>
+    <!-- Action Section  -->
+    <div class="action">
+        <div class="action-text">
+            <h3>Ready to Transform Your Focus and Well-Being?</h3>
+            <p>Join thousands of individuals who have unlocked their potential with MindFlow.</p>
+        </div>
+        <button class="action-btn">Start Your Journey Today</button>
+    </div>
+    <!-- Footer  -->
+    <footer>
+        <p>© 2025 MindFlow. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
