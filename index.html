@@ -24,6 +24,7 @@
             background-color:  #1F2937;
             font-size: 20px;
             color: #F9FAF8;
+            overflow: hidden;
         }
 
         .header img{
@@ -141,13 +142,11 @@
             font-size: 30px;
             font-style: light italic;
             color:#1F2937 ;
-            
+            min-width: 40%;
          }
 
         .quote p {
             text-align: justify;
-            
-            
         }
 
         .quote .attribution { 
@@ -164,7 +163,8 @@
             margin: 150px;
             background-color: #3882F6;
             border-radius: 5px;
-            color: #F9FAF8;            
+            color: #F9FAF8; 
+            font-size: 24px;           
         }
 
         .action div{
@@ -179,6 +179,8 @@
             border-radius: 5px;
             height: auto;
             background-color: #3882F6;
+            font-size: 22px;
+            margin-right: 20px;
         }
 
         footer{
@@ -200,9 +202,10 @@
                 margin: 10px 20px 0px 80px;
             }
 
-            .action-btn{
-                margin-right: 10px;
+            .action{
+                font-size: 22px;
             }
+
         }
 
         @media (max-width: 889px) {
@@ -212,18 +215,31 @@
 
             .hero h2{
                 font-size: 32px;
+                margin: 0;
+                padding: 10px 30px;
             }
 
             .hero-text p{
                 font-size: 20px;
+                margin: 0;
+                padding: 10px 30px;
+            }
+
+            .hero .btn{
+                margin: 15px 40%;
+
             }
 
             .hero-text{
-                margin-bottom: 40px;
+                margin-bottom: 25px;
             }
 
             .hero-image{
-                margin-bottom: 10px;
+                margin: 0px;
+            }
+
+            .notes {
+                padding: 60px;
             }
 
             .notes-text h2{
@@ -240,14 +256,40 @@
 
             .quote {
                 font-size: 20px;
+                padding: 50px;
             }
 
             .action{
                 flex-direction: column;
+                font-size: 20px;
+                margin: 50px;
             }
 
             .action-btn{
                 margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 500px){
+            .logo{
+                font-size: 17px;
+            }
+
+            .header-link ul{
+                font-size: 15px;
+            }
+
+            .notes {
+                padding: 40px;
+            }
+
+            .quote {
+                padding: 30px;
+                font-size: 20px;
+            }
+
+            .action-btn{
+                margin: 10px;
             }
         }
 
@@ -306,9 +348,9 @@
     </div>
     <!-- Quote Section  -->
     <div class="quote">
-        <p><em>The ability to stay focused on what matters, while calmly letting go of distractions, is the hallmark of a successful and fulfilled life. 
-            Success is not just about working hard, but about working smart and being mindful of how we channel our energy.<br></em>
-            <span class="attribution">—Thor, God of Thunder</span>
+        <p>The ability to stay focused on what matters, while calmly letting go of distractions, is the hallmark of a successful and fulfilled life. 
+            Success is not just about working hard, but about working smart and being mindful of how we channel our energy.<br>
+            <span class="attribution"><br>—Thor, God of Thunder</span>
         </p>
     </div>
     <!-- Action Section  -->
